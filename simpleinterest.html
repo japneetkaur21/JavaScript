@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Learning JS</title>
+<script>
+var principle = prompt("Enter the Principle" , 0000)
+var rate= prompt("Enter the rate of interest" , 0)
+var time = prompt("Enter the number of years" , 0)
+function Calculate() {
+               var si = principle*rate*time ;
+               document.write("The Simple Interest calculated is: " + si);
+            }
+ 
+	
+</script>
+</head>
+<body>
+ <p>Click the button to calculate the simple interest: </p>      
+      <form>
+         <input type = "button" value = "Calculate" onclick = "Calculate();" />
+      </form>      
+   </body>
+</html>
+

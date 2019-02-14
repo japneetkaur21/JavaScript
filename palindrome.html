@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Palindrome</title>
+<script>
+var str=prompt("Enter your string :", "Enter string")
+console.log(str);
+function checkPalindrome(str) {console.log(str);
+    return str == str.split('').reverse().join('');
+}
+function isPalindrome(str){console.log(str);
+if (checkPalindrome(str)){
+document.write("String is a palindrome.");
+}else{
+document.write("String is not a palindrome.")
+}
+}
+</script>
+</head>
+<body>
+ <p>Click the button to check if string is Palindrome or not: </p>      
+      <form>
+         <input type = "button" value = "Check" onclick = "isPalindrome(str);" />
+      </form>      
+ </body>
+</html>
+ 

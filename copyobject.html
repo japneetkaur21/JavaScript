@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Copying information of one object to another</title>
+ </head>
+ <body>
+     <script>
+function copy(mainObj) {
+  let objCopy = {};
+  let key;
+
+  for (key in mainObj) {
+    objCopy[key] = mainObj[key];
+  }
+  return objCopy;
+}
+
+const mainObj = {
+  a: 30,
+  b: 45,
+  c: {
+    x: 73,
+    y: 35,
+    z: 67
+  },
+}
+
+console.log(copy(mainObj));
+</script>
+ </body>
+</html>
+
